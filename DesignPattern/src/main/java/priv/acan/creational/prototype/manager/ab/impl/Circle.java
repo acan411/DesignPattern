@@ -1,4 +1,4 @@
-package priv.acan.creational.prototype.manager.impl;
+package priv.acan.creational.prototype.manager.ab.impl;
 
 import priv.acan.creational.prototype.manager.ab.Shape;
 

@@ -1,4 +1,4 @@
-package priv.acan.creational.factory.impl;
+package priv.acan.creational.factory.in.impl;
 
 import priv.acan.creational.factory.in.Shape;
 

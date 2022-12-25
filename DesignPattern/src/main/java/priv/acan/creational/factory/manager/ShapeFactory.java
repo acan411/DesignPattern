@@ -1,9 +1,9 @@
 package priv.acan.creational.factory.manager;
 
-import priv.acan.creational.factory.impl.Circle;
-import priv.acan.creational.factory.impl.Rectangle;
-import priv.acan.creational.factory.impl.Square;
 import priv.acan.creational.factory.in.Shape;
+import priv.acan.creational.factory.in.impl.Circle;
+import priv.acan.creational.factory.in.impl.Rectangle;
+import priv.acan.creational.factory.in.impl.Square;
 
 /**
  * @author acan
