@@ -1,9 +1,9 @@
 package priv.acan.creational.ab.factory;
 
 import priv.acan.creational.ab.factory.in.Color;
+import priv.acan.creational.ab.factory.in.Shape;
 import priv.acan.creational.ab.factory.manager.FactoryContext;
 import priv.acan.creational.ab.factory.manager.ab.AbstractFactory;
-import priv.acan.creational.ab.factory.in.Shape;
 
 /**
  * @author acan

@@ -1,7 +1,7 @@
 package priv.acan.creational.factory;
 
-import priv.acan.creational.factory.manager.ShapeFactory;
 import priv.acan.creational.factory.in.Shape;
+import priv.acan.creational.factory.manager.ShapeFactory;
 
 /**
  * @author acan

@@ -1,7 +1,7 @@
 package priv.acan.structural.adapter.in.basic;
 
-import priv.acan.structural.adapter.in.advance.Mp4Player;
 import priv.acan.structural.adapter.in.advance.AdvancedMediaPlayer;
+import priv.acan.structural.adapter.in.advance.Mp4Player;
 import priv.acan.structural.adapter.in.advance.VlcPlayer;
 
 public class MediaAdapter implements MediaPlayer {

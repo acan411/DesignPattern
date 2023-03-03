@@ -14,7 +14,7 @@ public class BridgeDemo {
     public static void main(String[] args) {
 
         Shape redCircle = new Circle(new RedCircle(), 100, 0, 0);
-        Shape greenCircle = new Circle(new GreenCircle(),50,1,1);
+        Shape greenCircle = new Circle(new GreenCircle(), 50, 1, 1);
 
         redCircle.draw();
         greenCircle.draw();

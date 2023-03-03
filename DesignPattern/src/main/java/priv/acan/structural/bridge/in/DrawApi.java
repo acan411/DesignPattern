@@ -6,5 +6,5 @@ package priv.acan.structural.bridge.in;
  */
 public interface DrawApi {
 
-    void drawCircle(int radius,int x,int y);
+    void drawCircle(int radius, int x, int y);
 }
