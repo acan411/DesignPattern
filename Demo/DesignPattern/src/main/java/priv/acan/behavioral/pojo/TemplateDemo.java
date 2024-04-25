@@ -1,0 +1,20 @@
+package priv.acan.behavioral.pojo;
+
+import priv.acan.behavioral.pojo.ab.Game;
+import priv.acan.behavioral.pojo.ab.impl.Cricket;
+import priv.acan.behavioral.pojo.ab.impl.Football;
+
+/**
+ * @author acan
+ * @version 2023/03/03 21:00
+ */
+public class TemplateDemo {
+
+    public static void main(String[] args) {
+        Game game = new Cricket();
+        game.play();
+        System.out.println();
+        game = new Football();
+        game.play();
+    }
+}
