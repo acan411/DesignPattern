@@ -8,7 +8,7 @@ import priv.acan.behavioral.visitor.in.part.impl.Mouse;
 
 /**
  * @author acan
- * @version 2023/03/03 21:28
+ * @since 2023/03/03 21:28
  */
 public interface ComputerPartVisitor {
 

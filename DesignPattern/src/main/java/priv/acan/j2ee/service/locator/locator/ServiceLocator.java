@@ -6,7 +6,7 @@ import priv.acan.j2ee.service.locator.in.Service;
 
 /**
  * @author acan
- * @version 2023/03/09 21:25
+ * @since 2023/03/09 21:25
  */
 public class ServiceLocator {
 

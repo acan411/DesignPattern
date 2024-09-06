@@ -6,7 +6,7 @@ import priv.acan.behavioral.state.in.State;
 
 /**
  * @author acan
- * @version 2023/03/03 20:26
+ * @since 2023/03/03 20:26
  */
 public class StartState implements State {
 

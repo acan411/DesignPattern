@@ -4,7 +4,7 @@ import priv.acan.creational.factory.in.Shape;
 
 /**
  * @author acan
- * @version 2022/12/12 02:53
+ * @since 2022/12/12 02:53
  */
 public class Square implements Shape {
     @Override

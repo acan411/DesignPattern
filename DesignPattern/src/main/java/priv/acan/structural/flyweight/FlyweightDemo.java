@@ -5,7 +5,7 @@ import priv.acan.structural.flyweight.in.impl.Circle;
 
 /**
  * @author acan
- * @version 2022/12/17 23:40
+ * @since 2022/12/17 23:40
  */
 public class FlyweightDemo {
 

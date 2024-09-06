@@ -4,7 +4,7 @@ import priv.acan.j2ee.intercepting.filter.in.Filter;
 
 /**
  * @author acan
- * @version 2023/03/09 20:43
+ * @since 2023/03/09 20:43
  */
 public class AuthenticationFilter implements Filter {
     @Override

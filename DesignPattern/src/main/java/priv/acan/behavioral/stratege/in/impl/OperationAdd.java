@@ -4,7 +4,7 @@ import priv.acan.behavioral.stratege.in.Strategy;
 
 /**
  * @author acan
- * @version 2023/03/03 20:48
+ * @since 2023/03/03 20:48
  */
 public class OperationAdd implements Strategy {
     @Override

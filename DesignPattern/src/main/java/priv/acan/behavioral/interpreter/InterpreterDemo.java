@@ -1,13 +1,13 @@
 package priv.acan.behavioral.interpreter;
 
-import priv.acan.behavioral.interpreter.in.Expression;
-import priv.acan.behavioral.interpreter.in.impl.AndExpression;
-import priv.acan.behavioral.interpreter.in.impl.OrExpression;
-import priv.acan.behavioral.interpreter.in.impl.TerminalExpression;
+import priv.acan.behavioral.interpreter.intf.Expression;
+import priv.acan.behavioral.interpreter.intf.impl.AndExpression;
+import priv.acan.behavioral.interpreter.intf.impl.OrExpression;
+import priv.acan.behavioral.interpreter.intf.impl.TerminalExpression;
 
 /**
  * @author acan
- * @version 2022/12/21 23:32
+ * @since 2022/12/21 23:32
  */
 public class InterpreterDemo {
 

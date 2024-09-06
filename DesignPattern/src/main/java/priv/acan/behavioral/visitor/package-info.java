@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2023/03/03 21:25
+ * @since 2023/03/03 21:25
  */
 package priv.acan.behavioral.visitor;
 

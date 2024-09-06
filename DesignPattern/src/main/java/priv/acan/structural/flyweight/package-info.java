@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/17 23:30
+ * @since 2022/12/17 23:30
  */
 package priv.acan.structural.flyweight;
 

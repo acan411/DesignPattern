@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2023/03/01 23:21
+ * @since 2023/03/01 23:21
  */
 package priv.acan.behavioral.observer;
 

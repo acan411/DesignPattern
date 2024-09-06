@@ -7,7 +7,7 @@ import priv.acan.behavioral.stratege.in.impl.OperationSubtract;
 
 /**
  * @author acan
- * @version 2023/03/03 20:50
+ * @since 2023/03/03 20:50
  */
 public class StrategyDemo {
 

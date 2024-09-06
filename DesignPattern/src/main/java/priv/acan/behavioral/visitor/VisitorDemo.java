@@ -6,7 +6,7 @@ import priv.acan.behavioral.visitor.in.part.impl.Computer;
 
 /**
  * @author acan
- * @version 2023/03/03 21:38
+ * @since 2023/03/03 21:38
  */
 public class VisitorDemo {
     public static void main(String[] args) {

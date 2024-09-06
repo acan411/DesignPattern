@@ -4,7 +4,7 @@ import priv.acan.structural.proxy.in.Image;
 
 /**
  * @author acan
- * @version 2022/12/17 23:52
+ * @since 2022/12/17 23:52
  */
 public class ProxyImage implements Image {
 

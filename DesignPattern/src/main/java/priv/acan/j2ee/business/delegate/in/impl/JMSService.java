@@ -4,7 +4,7 @@ import priv.acan.j2ee.business.delegate.in.BusinessService;
 
 /**
  * @author acan
- * @version 2023/03/04 14:41
+ * @since 2023/03/04 14:41
  */
 public class JMSService implements BusinessService {
     @Override

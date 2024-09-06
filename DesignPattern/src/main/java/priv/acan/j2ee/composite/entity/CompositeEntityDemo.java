@@ -4,7 +4,7 @@ import priv.acan.j2ee.composite.entity.context.Client;
 
 /**
  * @author acan
- * @version 2023/03/09 17:56
+ * @since 2023/03/09 17:56
  */
 public class CompositeEntityDemo {
 

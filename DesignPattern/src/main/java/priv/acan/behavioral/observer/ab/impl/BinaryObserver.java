@@ -5,7 +5,7 @@ import priv.acan.behavioral.observer.context.Subject;
 
 /**
  * @author acan
- * @version 2023/03/01 23:41
+ * @since 2023/03/01 23:41
  */
 public class BinaryObserver extends Observer {
 

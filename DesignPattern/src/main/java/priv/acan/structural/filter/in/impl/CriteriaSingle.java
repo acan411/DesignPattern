@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @author acan
- * @version 2022/12/17 14:17
+ * @since 2022/12/17 14:17
  */
 public class CriteriaSingle implements Criteria {
 

@@ -4,7 +4,7 @@ import priv.acan.behavioral.mediator.model.User;
 
 /**
  * @author acan
- * @version 2022/12/26 03:51
+ * @since 2022/12/26 03:51
  */
 public class ChatRoom {
 

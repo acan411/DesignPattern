@@ -2,7 +2,7 @@ package priv.acan.behavioral.pojo.ab;
 
 /**
  * @author acan
- * @version 2023/03/03 20:54
+ * @since 2023/03/03 20:54
  */
 public abstract class Game {
 

@@ -5,7 +5,7 @@ import priv.acan.creational.ab.factory.in.Shape;
 
 /**
  * @author acan
- * @version 2022/12/12 03:12
+ * @since 2022/12/12 03:12
  */
 public abstract class AbstractFactory {
 

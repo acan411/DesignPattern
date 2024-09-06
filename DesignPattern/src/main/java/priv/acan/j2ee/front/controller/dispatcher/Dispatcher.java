@@ -5,7 +5,7 @@ import priv.acan.j2ee.front.controller.view.StudentView;
 
 /**
  * @author acan
- * @version 2023/03/09 20:14
+ * @since 2023/03/09 20:14
  */
 public class Dispatcher {
 

@@ -1,13 +1,13 @@
 package priv.acan.behavioral.command;
 
-import priv.acan.behavioral.command.in.impl.BuyStock;
-import priv.acan.behavioral.command.in.impl.SellStock;
+import priv.acan.behavioral.command.intf.impl.BuyStock;
+import priv.acan.behavioral.command.intf.impl.SellStock;
 import priv.acan.behavioral.command.manager.Brocker;
 import priv.acan.behavioral.command.model.Stock;
 
 /**
  * @author acan
- * @version 2022/12/21 23:12
+ * @since 2022/12/21 23:12
  */
 public class CommandDemo {
 

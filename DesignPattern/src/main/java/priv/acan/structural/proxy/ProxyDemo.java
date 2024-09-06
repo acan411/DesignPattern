@@ -5,7 +5,7 @@ import priv.acan.structural.proxy.in.impl.ProxyImage;
 
 /**
  * @author acan
- * @version 2022/12/17 23:59
+ * @since 2022/12/17 23:59
  */
 public class ProxyDemo {
 

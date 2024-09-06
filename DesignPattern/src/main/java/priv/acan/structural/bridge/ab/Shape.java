@@ -4,7 +4,7 @@ import priv.acan.structural.bridge.in.DrawApi;
 
 /**
  * @author acan
- * @version 2022/12/16 23:47
+ * @since 2022/12/16 23:47
  */
 public abstract class Shape {
 

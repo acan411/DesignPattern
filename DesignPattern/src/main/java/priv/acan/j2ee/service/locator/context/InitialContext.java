@@ -5,7 +5,7 @@ import priv.acan.j2ee.service.locator.in.impl.Service2;
 
 /**
  * @author acan
- * @version 2023/03/09 21:18
+ * @since 2023/03/09 21:18
  */
 public class InitialContext {
     public Object lookup(String jndiName) {

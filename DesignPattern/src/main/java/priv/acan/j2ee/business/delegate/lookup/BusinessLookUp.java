@@ -6,7 +6,7 @@ import priv.acan.j2ee.business.delegate.in.impl.JMSService;
 
 /**
  * @author acan
- * @version 2023/03/04 14:43
+ * @since 2023/03/04 14:43
  */
 public class BusinessLookUp {
 

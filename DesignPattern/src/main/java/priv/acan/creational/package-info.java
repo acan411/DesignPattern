@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/12 02:39
+ * @since 2022/12/12 02:39
  */
 package priv.acan.creational;
 

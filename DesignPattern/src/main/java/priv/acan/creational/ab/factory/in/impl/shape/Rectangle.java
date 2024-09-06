@@ -4,7 +4,7 @@ import priv.acan.creational.ab.factory.in.Shape;
 
 /**
  * @author acan
- * @version 2022/12/12 03:07
+ * @since 2022/12/12 03:07
  */
 public class Rectangle implements Shape {
     @Override

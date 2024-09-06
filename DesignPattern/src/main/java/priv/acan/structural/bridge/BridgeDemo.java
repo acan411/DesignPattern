@@ -7,7 +7,7 @@ import priv.acan.structural.bridge.in.impl.RedCircle;
 
 /**
  * @author acan
- * @version 2022/12/16 23:52
+ * @since 2022/12/16 23:52
  */
 public class BridgeDemo {
 

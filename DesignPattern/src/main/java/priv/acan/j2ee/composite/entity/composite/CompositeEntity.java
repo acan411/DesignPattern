@@ -4,7 +4,7 @@ import priv.acan.j2ee.composite.entity.grained.CoarseGrainedObject;
 
 /**
  * @author acan
- * @version 2023/03/09 17:52
+ * @since 2023/03/09 17:52
  */
 public class CompositeEntity {
 

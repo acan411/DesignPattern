@@ -6,7 +6,7 @@ import priv.acan.behavioral.mediator.context.ChatRoom;
 
 /**
  * @author acan
- * @version 2022/12/26 03:52
+ * @since 2022/12/26 03:52
  */
 @Data
 @AllArgsConstructor

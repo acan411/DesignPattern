@@ -5,7 +5,7 @@ import priv.acan.behavioral.observer.context.Subject;
 
 /**
  * @author acan
- * @version 2023/03/01 23:46
+ * @since 2023/03/01 23:46
  */
 public class HexObserver extends Observer {
 

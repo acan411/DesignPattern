@@ -1,22 +1,22 @@
 package priv.acan.behavioral.blank.factory;
 
-import priv.acan.behavioral.blank.ab.AbstractCustomer;
-import priv.acan.behavioral.blank.ab.impl.NullCustomer;
-import priv.acan.behavioral.blank.ab.impl.RealCustomer;
+import priv.acan.behavioral.blank.abst.AbstractCustomer;
+import priv.acan.behavioral.blank.abst.impl.NullCustomer;
+import priv.acan.behavioral.blank.abst.impl.RealCustomer;
+
+import java.util.Set;
 
 /**
  * @author acan
- * @version 2023/03/03 20:37
+ * @since 2023/03/03 20:37
  */
 public class CustomerFactory {
 
-    public static final String[] names = {"Rob", "Joe", "Julie"};
+    public static final Set<String> set = Set.of("Rob", "Joe", "Julie");
 
     public static AbstractCustomer getCustomer(String name) {
-        for (String s : names) {
-            if (s.equalsIgnoreCase(name)) {
-                return new RealCustomer(name);
-            }
+        if (set.contains(name)) {
+            return new RealCustomer(name);
         }
         return new NullCustomer();
     }

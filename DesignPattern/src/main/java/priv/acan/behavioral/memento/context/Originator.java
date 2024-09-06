@@ -6,7 +6,7 @@ import priv.acan.behavioral.memento.model.Memento;
 
 /**
  * @author acan
- * @version 2022/12/26 04:03
+ * @since 2022/12/26 04:03
  */
 @Getter
 @Setter

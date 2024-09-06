@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/18 10:04
+ * @since 2022/12/18 10:04
  */
 package priv.acan.behavioral.chain;
 

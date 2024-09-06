@@ -6,7 +6,7 @@ import priv.acan.creational.ab.factory.manager.factory.ShapeFactory;
 
 /**
  * @author acan
- * @version 2022/12/12 03:25
+ * @since 2022/12/12 03:25
  */
 public class FactoryContext {
 

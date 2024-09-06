@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/17 15:22
+ * @since 2022/12/17 15:22
  */
 package priv.acan.structural.decorator;
 

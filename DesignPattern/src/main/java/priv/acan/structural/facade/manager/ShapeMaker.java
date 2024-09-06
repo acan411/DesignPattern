@@ -7,7 +7,7 @@ import priv.acan.structural.facade.in.impl.Square;
 
 /**
  * @author acan
- * @version 2022/12/17 23:28
+ * @since 2022/12/17 23:28
  */
 public class ShapeMaker {
 

@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2023/03/09 17:57
+ * @since 2023/03/09 17:57
  */
 package priv.acan.j2ee.composite.entity;
 

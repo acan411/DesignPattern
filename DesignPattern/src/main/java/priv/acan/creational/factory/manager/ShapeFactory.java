@@ -7,7 +7,7 @@ import priv.acan.creational.factory.in.impl.Square;
 
 /**
  * @author acan
- * @version 2022/12/12 02:54
+ * @since 2022/12/12 02:54
  */
 public class ShapeFactory {
 

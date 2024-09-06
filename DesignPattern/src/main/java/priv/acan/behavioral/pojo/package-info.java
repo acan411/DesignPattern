@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2023/03/03 20:52
+ * @since 2023/03/03 20:52
  */
 package priv.acan.behavioral.pojo;
 

@@ -4,7 +4,7 @@ import priv.acan.behavioral.visitor.in.collective.ComputerPartVisitor;
 
 /**
  * @author acan
- * @version 2023/03/03 21:27
+ * @since 2023/03/03 21:27
  */
 public interface ComputerPart {
 

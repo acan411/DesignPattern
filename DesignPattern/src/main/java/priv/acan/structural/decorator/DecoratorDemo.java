@@ -7,7 +7,7 @@ import priv.acan.structural.decorator.in.impl.Rectangle;
 
 /**
  * @author acan
- * @version 2022/12/17 15:30
+ * @since 2022/12/17 15:30
  */
 public class DecoratorDemo {
 

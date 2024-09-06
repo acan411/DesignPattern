@@ -9,7 +9,7 @@ import priv.acan.creational.ab.factory.manager.ab.AbstractFactory;
 
 /**
  * @author acan
- * @version 2022/12/12 03:21
+ * @since 2022/12/12 03:21
  */
 public class ColorFactory extends AbstractFactory {
     @Override

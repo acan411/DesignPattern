@@ -4,7 +4,7 @@ import priv.acan.structural.facade.manager.ShapeMaker;
 
 /**
  * @author acan
- * @version 2022/12/17 23:29
+ * @since 2022/12/17 23:29
  */
 public class FacadeDemo {
 

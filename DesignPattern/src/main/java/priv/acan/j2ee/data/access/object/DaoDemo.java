@@ -6,7 +6,7 @@ import priv.acan.j2ee.data.access.object.pojo.Student;
 
 /**
  * @author acan
- * @version 2023/03/09 20:05
+ * @since 2023/03/09 20:05
  */
 public class DaoDemo {
     public static void main(String[] args) {

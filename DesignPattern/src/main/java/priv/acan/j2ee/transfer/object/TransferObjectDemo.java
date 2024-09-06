@@ -5,7 +5,7 @@ import priv.acan.j2ee.transfer.object.pojo.StudentVO;
 
 /**
  * @author acan
- * @version 2023/03/10 20:22
+ * @since 2023/03/10 20:22
  */
 public class TransferObjectDemo {
 

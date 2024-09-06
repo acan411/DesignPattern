@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2023/03/10 20:16
+ * @since 2023/03/10 20:16
  */
 package priv.acan.j2ee.transfer.object;
 

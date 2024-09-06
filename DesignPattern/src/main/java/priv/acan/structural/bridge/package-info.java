@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/16 23:36
+ * @since 2022/12/16 23:36
  */
 package priv.acan.structural.bridge;
 

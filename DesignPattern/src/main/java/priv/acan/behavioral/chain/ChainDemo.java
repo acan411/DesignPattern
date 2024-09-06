@@ -1,13 +1,13 @@
 package priv.acan.behavioral.chain;
 
-import priv.acan.behavioral.chain.ab.AbstractLogger;
-import priv.acan.behavioral.chain.ab.impl.DebugLogger;
-import priv.acan.behavioral.chain.ab.impl.ErrorLogger;
-import priv.acan.behavioral.chain.ab.impl.InfoLogger;
+import priv.acan.behavioral.chain.abst.AbstractLogger;
+import priv.acan.behavioral.chain.abst.impl.DebugLogger;
+import priv.acan.behavioral.chain.abst.impl.ErrorLogger;
+import priv.acan.behavioral.chain.abst.impl.InfoLogger;
 
 /**
  * @author acan
- * @version 2022/12/18 18:29
+ * @since 2022/12/18 18:29
  */
 public class ChainDemo {
 

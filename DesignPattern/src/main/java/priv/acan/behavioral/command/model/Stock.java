@@ -2,7 +2,7 @@ package priv.acan.behavioral.command.model;
 
 /**
  * @author acan
- * @version 2022/12/21 23:05
+ * @since 2022/12/21 23:05
  */
 public class Stock {
 

@@ -5,7 +5,7 @@ import priv.acan.j2ee.business.delegate.lookup.BusinessLookUp;
 
 /**
  * @author acan
- * @version 2023/03/04 14:46
+ * @since 2023/03/04 14:46
  */
 public class BusinessDelegate {
 

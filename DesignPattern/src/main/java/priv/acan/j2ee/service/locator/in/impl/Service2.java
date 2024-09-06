@@ -4,7 +4,7 @@ import priv.acan.j2ee.service.locator.in.Service;
 
 /**
  * @author acan
- * @version 2023/03/09 21:14
+ * @since 2023/03/09 21:14
  */
 public class Service2 implements Service {
     @Override

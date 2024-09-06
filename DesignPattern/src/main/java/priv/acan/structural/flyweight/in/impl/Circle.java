@@ -4,7 +4,7 @@ import priv.acan.structural.flyweight.in.Shape;
 
 /**
  * @author acan
- * @version 2022/12/17 23:33
+ * @since 2022/12/17 23:33
  */
 public class Circle implements Shape {
 

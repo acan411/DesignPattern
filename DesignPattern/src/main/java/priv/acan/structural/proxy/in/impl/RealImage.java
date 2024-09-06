@@ -4,7 +4,7 @@ import priv.acan.structural.proxy.in.Image;
 
 /**
  * @author acan
- * @version 2022/12/17 23:51
+ * @since 2022/12/17 23:51
  */
 public class RealImage implements Image {
 

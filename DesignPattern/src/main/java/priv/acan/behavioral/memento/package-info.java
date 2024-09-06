@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/26 03:58
+ * @since 2022/12/26 03:58
  */
 package priv.acan.behavioral.memento;
 

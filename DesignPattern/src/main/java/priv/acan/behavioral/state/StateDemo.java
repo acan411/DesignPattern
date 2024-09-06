@@ -6,7 +6,7 @@ import priv.acan.behavioral.state.in.impl.StopState;
 
 /**
  * @author acan
- * @version 2023/03/03 20:30
+ * @since 2023/03/03 20:30
  */
 public class StateDemo {
 

@@ -5,7 +5,7 @@ import priv.acan.creational.factory.manager.ShapeFactory;
 
 /**
  * @author acan
- * @version 2022/12/12 02:58
+ * @since 2022/12/12 02:58
  */
 public class FactoryDemo {
 

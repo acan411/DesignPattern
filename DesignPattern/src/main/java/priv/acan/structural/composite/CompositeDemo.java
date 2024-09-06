@@ -4,7 +4,7 @@ import priv.acan.structural.composite.model.Employee;
 
 /**
  * @author acan
- * @version 2022/12/17 15:12
+ * @since 2022/12/17 15:12
  */
 public class CompositeDemo {
 

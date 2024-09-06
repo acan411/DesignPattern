@@ -5,7 +5,7 @@ import priv.acan.creational.builder.manager.MealBuilder;
 
 /**
  * @author acan
- * @version 2022/12/12 04:06
+ * @since 2022/12/12 04:06
  */
 public class BuilderDemo {
 

@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * @author acan
- * @version 2023/03/10 20:18
+ * @since 2023/03/10 20:18
  */
 @Data
 @AllArgsConstructor

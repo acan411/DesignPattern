@@ -4,7 +4,7 @@ import priv.acan.j2ee.front.controller.dispatcher.Dispatcher;
 
 /**
  * @author acan
- * @version 2023/03/09 20:17
+ * @since 2023/03/09 20:17
  */
 public class FrontController {
 

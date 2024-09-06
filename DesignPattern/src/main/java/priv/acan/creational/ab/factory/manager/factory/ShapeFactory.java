@@ -10,7 +10,7 @@ import priv.acan.creational.ab.factory.manager.ab.AbstractFactory;
 
 /**
  * @author acan
- * @version 2022/12/12 03:14
+ * @since 2022/12/12 03:14
  */
 public class ShapeFactory extends AbstractFactory {
 

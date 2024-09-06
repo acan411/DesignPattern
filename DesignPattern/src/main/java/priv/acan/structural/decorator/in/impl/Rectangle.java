@@ -4,7 +4,7 @@ import priv.acan.structural.decorator.in.Shape;
 
 /**
  * @author acan
- * @version 2022/12/17 15:25
+ * @since 2022/12/17 15:25
  */
 public class Rectangle implements Shape {
 

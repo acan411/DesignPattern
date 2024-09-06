@@ -5,7 +5,7 @@ import priv.acan.behavioral.visitor.in.part.ComputerPart;
 
 /**
  * @author acan
- * @version 2023/03/03 21:33
+ * @since 2023/03/03 21:33
  */
 public class Computer implements ComputerPart {
 

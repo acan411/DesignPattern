@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/21 23:16
+ * @since 2022/12/21 23:16
  */
 package priv.acan.behavioral.interpreter;
 

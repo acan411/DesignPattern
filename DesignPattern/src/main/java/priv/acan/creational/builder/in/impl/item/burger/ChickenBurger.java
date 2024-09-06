@@ -4,7 +4,7 @@ import priv.acan.creational.builder.in.impl.item.ab.Burger;
 
 /**
  * @author acan
- * @version 2022/12/12 03:53
+ * @since 2022/12/12 03:53
  */
 public class ChickenBurger extends Burger {
     @Override

@@ -4,7 +4,7 @@ import priv.acan.behavioral.pojo.ab.Game;
 
 /**
  * @author acan
- * @version 2023/03/03 20:59
+ * @since 2023/03/03 20:59
  */
 public class Football extends Game {
     @Override

@@ -5,7 +5,7 @@ import priv.acan.j2ee.business.delegate.client.Client;
 
 /**
  * @author acan
- * @version 2023/03/04 14:48
+ * @since 2023/03/04 14:48
  */
 public class BusinessDelegateDemo {
 

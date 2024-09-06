@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/17 23:48
+ * @since 2022/12/17 23:48
  */
 package priv.acan.structural.proxy;
 

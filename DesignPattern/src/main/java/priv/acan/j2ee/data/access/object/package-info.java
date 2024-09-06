@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2023/03/09 19:53
+ * @since 2023/03/09 19:53
  */
 package priv.acan.j2ee.data.access.object;
 

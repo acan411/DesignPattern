@@ -6,7 +6,7 @@ import priv.acan.creational.builder.in.impl.packing.Wrapper;
 
 /**
  * @author acan
- * @version 2022/12/12 03:46
+ * @since 2022/12/12 03:46
  */
 public abstract class Burger implements Item {
 

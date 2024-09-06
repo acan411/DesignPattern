@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2023/03/03 20:44
+ * @since 2023/03/03 20:44
  */
 package priv.acan.behavioral.stratege;
 

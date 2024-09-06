@@ -7,7 +7,7 @@ import priv.acan.creational.ab.factory.manager.ab.AbstractFactory;
 
 /**
  * @author acan
- * @version 2022/12/12 03:23
+ * @since 2022/12/12 03:23
  */
 public class AbstractFactoryDemo {
 

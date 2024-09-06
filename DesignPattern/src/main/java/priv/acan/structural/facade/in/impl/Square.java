@@ -4,7 +4,7 @@ import priv.acan.structural.facade.in.Shape;
 
 /**
  * @author acan
- * @version 2022/12/17 23:27
+ * @since 2022/12/17 23:27
  */
 public class Square implements Shape {
 

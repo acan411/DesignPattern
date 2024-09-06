@@ -5,7 +5,7 @@ import priv.acan.behavioral.visitor.in.part.ComputerPart;
 
 /**
  * @author acan
- * @version 2023/03/03 21:30
+ * @since 2023/03/03 21:30
  */
 public class Keyboard implements ComputerPart {
     @Override

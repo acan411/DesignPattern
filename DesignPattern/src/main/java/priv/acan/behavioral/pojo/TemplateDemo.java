@@ -6,7 +6,7 @@ import priv.acan.behavioral.pojo.ab.impl.Football;
 
 /**
  * @author acan
- * @version 2023/03/03 21:00
+ * @since 2023/03/03 21:00
  */
 public class TemplateDemo {
 

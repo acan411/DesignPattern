@@ -5,7 +5,7 @@ import priv.acan.j2ee.composite.entity.pojo.DependentObject2;
 
 /**
  * @author acan
- * @version 2023/03/09 17:45
+ * @since 2023/03/09 17:45
  */
 public class CoarseGrainedObject {
 

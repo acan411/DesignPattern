@@ -1,11 +1,11 @@
 package priv.acan.behavioral.blank;
 
-import priv.acan.behavioral.blank.ab.AbstractCustomer;
+import priv.acan.behavioral.blank.abst.AbstractCustomer;
 import priv.acan.behavioral.blank.factory.CustomerFactory;
 
 /**
  * @author acan
- * @version 2023/03/03 20:40
+ * @since 2023/03/03 20:40
  */
 public class NullObjectDemo {
 
@@ -16,7 +16,7 @@ public class NullObjectDemo {
         AbstractCustomer customer3 = CustomerFactory.getCustomer("Julie");
         AbstractCustomer customer4 = CustomerFactory.getCustomer("Laura");
 
-        System.out.println("Customers:");
+        System.out.println("Customers: ");
         System.out.println(customer1.getName());
         System.out.println(customer2.getName());
         System.out.println(customer3.getName());

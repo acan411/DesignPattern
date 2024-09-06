@@ -5,7 +5,7 @@ import priv.acan.behavioral.visitor.in.part.ComputerPart;
 
 /**
  * @author acan
- * @version 2023/03/03 21:31
+ * @since 2023/03/03 21:31
  */
 public class Monitor implements ComputerPart {
     @Override

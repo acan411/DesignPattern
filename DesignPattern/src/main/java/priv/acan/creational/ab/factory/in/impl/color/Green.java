@@ -4,7 +4,7 @@ import priv.acan.creational.ab.factory.in.Color;
 
 /**
  * @author acan
- * @version 2022/12/12 03:11
+ * @since 2022/12/12 03:11
  */
 public class Green implements Color {
     @Override

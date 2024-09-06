@@ -5,7 +5,7 @@ import priv.acan.behavioral.memento.manager.CareTaker;
 
 /**
  * @author acan
- * @version 2022/12/26 04:08
+ * @since 2022/12/26 04:08
  */
 public class MementoDemo {
 

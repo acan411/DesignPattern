@@ -1,6 +1,6 @@
 /**
  * @author acan
- * @version 2022/12/26 03:37
+ * @since 2022/12/26 03:37
  */
 package priv.acan.behavioral.iterator;
 // 迭代器模式
