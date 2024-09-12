@@ -1,7 +1,5 @@
 package priv.acan.creational.abst.factory.manager.factory;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import priv.acan.creational.abst.factory.in.Color;
 import priv.acan.creational.abst.factory.in.Shape;
 import priv.acan.creational.abst.factory.in.impl.color.Blue;

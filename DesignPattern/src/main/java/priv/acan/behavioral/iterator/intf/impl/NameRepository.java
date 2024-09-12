@@ -1,6 +1,5 @@
 package priv.acan.behavioral.iterator.intf.impl;
 
-import lombok.AllArgsConstructor;
 import priv.acan.behavioral.iterator.intf.Container;
 import priv.acan.behavioral.iterator.intf.Iterator;
 
