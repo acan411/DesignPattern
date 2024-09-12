@@ -1,8 +1,8 @@
 package priv.acan.behavioral.pojo;
 
-import priv.acan.behavioral.pojo.ab.Game;
-import priv.acan.behavioral.pojo.ab.impl.Cricket;
-import priv.acan.behavioral.pojo.ab.impl.Football;
+import priv.acan.behavioral.pojo.abst.Game;
+import priv.acan.behavioral.pojo.abst.impl.Cricket;
+import priv.acan.behavioral.pojo.abst.impl.Football;
 
 /**
  * @author acan

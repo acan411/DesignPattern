@@ -1,8 +1,8 @@
 package priv.acan.behavioral.observer;
 
-import priv.acan.behavioral.observer.ab.impl.BinaryObserver;
-import priv.acan.behavioral.observer.ab.impl.HexObserver;
-import priv.acan.behavioral.observer.ab.impl.OctalObserver;
+import priv.acan.behavioral.observer.abst.impl.BinaryObserver;
+import priv.acan.behavioral.observer.abst.impl.HexObserver;
+import priv.acan.behavioral.observer.abst.impl.OctalObserver;
 import priv.acan.behavioral.observer.context.Subject;
 
 /**

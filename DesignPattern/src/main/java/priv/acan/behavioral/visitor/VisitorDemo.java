@@ -1,8 +1,8 @@
 package priv.acan.behavioral.visitor;
 
-import priv.acan.behavioral.visitor.in.collective.impl.ComputerPartDisplayVisitor;
-import priv.acan.behavioral.visitor.in.part.ComputerPart;
-import priv.acan.behavioral.visitor.in.part.impl.Computer;
+import priv.acan.behavioral.visitor.intf.collective.impl.ComputerPartDisplayVisitor;
+import priv.acan.behavioral.visitor.intf.part.ComputerPart;
+import priv.acan.behavioral.visitor.intf.part.impl.Computer;
 
 /**
  * @author acan

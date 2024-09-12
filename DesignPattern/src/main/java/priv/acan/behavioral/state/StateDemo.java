@@ -1,8 +1,8 @@
 package priv.acan.behavioral.state;
 
 import priv.acan.behavioral.state.context.Context;
-import priv.acan.behavioral.state.in.impl.StartState;
-import priv.acan.behavioral.state.in.impl.StopState;
+import priv.acan.behavioral.state.intf.impl.StartState;
+import priv.acan.behavioral.state.intf.impl.StopState;
 
 /**
  * @author acan

@@ -1,6 +1,7 @@
 package priv.acan.behavioral.observer.context;
 
-import priv.acan.behavioral.observer.ab.Observer;
+import lombok.Getter;
+import priv.acan.behavioral.observer.abst.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +13,9 @@ import java.util.List;
 public class Subject {
 
     private final List<Observer> observers = new ArrayList<>();
-    private int state;
 
-    public int getState() {
-        return state;
-    }
+    @Getter
+    private int state;
 
     public void setState(int state) {
         this.state = state;
