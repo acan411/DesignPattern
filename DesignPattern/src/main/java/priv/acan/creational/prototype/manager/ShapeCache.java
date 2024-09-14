@@ -1,23 +1,24 @@
 package priv.acan.creational.prototype.manager;
 
-import priv.acan.creational.prototype.manager.ab.Shape;
-import priv.acan.creational.prototype.manager.ab.impl.Circle;
-import priv.acan.creational.prototype.manager.ab.impl.Rectangle;
-import priv.acan.creational.prototype.manager.ab.impl.Square;
+import priv.acan.creational.prototype.abst.Shape;
+import priv.acan.creational.prototype.abst.impl.Circle;
+import priv.acan.creational.prototype.abst.impl.Rectangle;
+import priv.acan.creational.prototype.abst.impl.Square;
 
-import java.util.Hashtable;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ShapeCache {
 
-    private static final Hashtable<Integer, Shape> SHAPE_MAP = new Hashtable<>();
+    private static final Map<Integer, Shape> SHAPE_MAP = new HashMap<>();
 
-    public static void loadCache() {
-        SHAPE_MAP.put(1, new Circle(1));
-        SHAPE_MAP.put(2, new Square(2));
-        SHAPE_MAP.put(3, new Rectangle(3));
+    static {
+        SHAPE_MAP.put(ShapeType.CIRCLE.getId(), new Circle());
+        SHAPE_MAP.put(ShapeType.SQUARE.getId(), new Square());
+        SHAPE_MAP.put(ShapeType.RECTANGLE.getId(), new Rectangle());
     }
 
-    public static Shape getShape(Integer shapeId) {
-        return SHAPE_MAP.get(shapeId).clone();
+    public static Shape getShape(ShapeType shapeType) {
+        return SHAPE_MAP.get(shapeType.getId()).clone();
     }
 }

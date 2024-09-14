@@ -1,6 +1,6 @@
 package priv.acan.creational.builder.manager;
 
-import priv.acan.creational.builder.in.Item;
+import priv.acan.creational.builder.intf.Item;
 
 import java.util.ArrayList;
 import java.util.List;

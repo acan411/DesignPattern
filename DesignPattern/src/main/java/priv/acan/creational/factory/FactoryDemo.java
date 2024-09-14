@@ -1,7 +1,8 @@
 package priv.acan.creational.factory;
 
-import priv.acan.creational.factory.in.Shape;
+import priv.acan.creational.factory.intf.Shape;
 import priv.acan.creational.factory.manager.ShapeFactory;
+import priv.acan.creational.factory.manager.ShapeType;
 
 /**
  * @author acan
@@ -13,13 +14,13 @@ public class FactoryDemo {
 
         ShapeFactory shapeFactory = new ShapeFactory();
 
-        Shape rectangle = shapeFactory.getShape("rectangle");
+        Shape rectangle = shapeFactory.getShape(ShapeType.RECTANGLE);
         rectangle.draw();
 
-        Shape square = shapeFactory.getShape("square");
+        Shape square = shapeFactory.getShape(ShapeType.SQUARE);
         square.draw();
 
-        Shape circle = shapeFactory.getShape("circle");
+        Shape circle = shapeFactory.getShape(ShapeType.CIRCLE);
         circle.draw();
     }
 }

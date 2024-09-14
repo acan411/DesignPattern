@@ -1,9 +1,12 @@
 package priv.acan.creational.abst.factory;
 
-import priv.acan.creational.abst.factory.in.Color;
-import priv.acan.creational.abst.factory.in.Shape;
+import priv.acan.creational.abst.factory.abst.AbstractFactory;
+import priv.acan.creational.abst.factory.intf.Color;
+import priv.acan.creational.abst.factory.intf.Shape;
+import priv.acan.creational.abst.factory.manager.ColorType;
 import priv.acan.creational.abst.factory.manager.FactoryContext;
-import priv.acan.creational.abst.factory.manager.ab.AbstractFactory;
+import priv.acan.creational.abst.factory.manager.FactoryType;
+import priv.acan.creational.abst.factory.manager.ShapeType;
 
 /**
  * @author acan
@@ -13,16 +16,12 @@ public class AbstractFactoryDemo {
 
     public static void main(String[] args) {
 
-        AbstractFactory shapeFactory = FactoryContext.getFactory("shape");
-        assert shapeFactory != null;
-        Shape circle = shapeFactory.getShape("circle");
-        assert circle != null;
+        AbstractFactory shapeFactory = FactoryContext.getFactory(FactoryType.SHAPE);
+        Shape circle = shapeFactory.getShape(ShapeType.CIRCLE);
         circle.draw();
 
-        AbstractFactory colorFactory = FactoryContext.getFactory("color");
-        assert colorFactory != null;
-        Color color = colorFactory.getColor("red");
-        assert color != null;
+        AbstractFactory colorFactory = FactoryContext.getFactory(FactoryType.COLOR);
+        Color color = colorFactory.getColor(ColorType.RED);
         color.fill();
     }
 }

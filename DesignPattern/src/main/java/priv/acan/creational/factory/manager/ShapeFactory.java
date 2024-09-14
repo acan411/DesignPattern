@@ -1,9 +1,9 @@
 package priv.acan.creational.factory.manager;
 
-import priv.acan.creational.factory.in.Shape;
-import priv.acan.creational.factory.in.impl.Circle;
-import priv.acan.creational.factory.in.impl.Rectangle;
-import priv.acan.creational.factory.in.impl.Square;
+import priv.acan.creational.factory.intf.Shape;
+import priv.acan.creational.factory.intf.impl.Circle;
+import priv.acan.creational.factory.intf.impl.Rectangle;
+import priv.acan.creational.factory.intf.impl.Square;
 
 /**
  * @author acan
@@ -11,12 +11,11 @@ import priv.acan.creational.factory.in.impl.Square;
  */
 public class ShapeFactory {
 
-    public Shape getShape(String shapeType) {
-        return switch (shapeType.toLowerCase()) {
-            case "circle" -> new Circle();
-            case "square" -> new Square();
-            case "rectangle" -> new Rectangle();
-            default -> null;
+    public Shape getShape(ShapeType shapeFactory) {
+        return switch (shapeFactory) {
+            case CIRCLE -> new Circle();
+            case SQUARE -> new Square();
+            case RECTANGLE -> new Rectangle();
         };
     }
 }

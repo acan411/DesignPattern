@@ -1,8 +1,8 @@
 package priv.acan.creational.abst.factory.manager;
 
-import priv.acan.creational.abst.factory.manager.ab.AbstractFactory;
-import priv.acan.creational.abst.factory.manager.factory.ColorFactory;
-import priv.acan.creational.abst.factory.manager.factory.ShapeFactory;
+import priv.acan.creational.abst.factory.abst.AbstractFactory;
+import priv.acan.creational.abst.factory.abst.impl.ColorFactory;
+import priv.acan.creational.abst.factory.abst.impl.ShapeFactory;
 
 /**
  * @author acan
@@ -10,11 +10,10 @@ import priv.acan.creational.abst.factory.manager.factory.ShapeFactory;
  */
 public class FactoryContext {
 
-    public static AbstractFactory getFactory(String factoryType) {
-        return switch (factoryType.toLowerCase()) {
-            default -> null;
-            case "color" -> new ColorFactory();
-            case "shape" -> new ShapeFactory();
+    public static AbstractFactory getFactory(FactoryType factoryType) {
+        return switch (factoryType) {
+            case COLOR -> new ColorFactory();
+            case SHAPE -> new ShapeFactory();
         };
     }
 }

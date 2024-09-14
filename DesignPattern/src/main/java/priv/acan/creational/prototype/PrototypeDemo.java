@@ -1,16 +1,14 @@
 package priv.acan.creational.prototype;
 
 import priv.acan.creational.prototype.manager.ShapeCache;
+import priv.acan.creational.prototype.manager.ShapeType;
 
 public class PrototypeDemo {
 
     public static void main(String[] args) {
 
-        ShapeCache.loadCache();
-
-        System.out.println(ShapeCache.getShape(1).getType());
-        System.out.println(ShapeCache.getShape(2).getType());
-        System.out.println(ShapeCache.getShape(3).getType());
-
+        System.out.println(ShapeCache.getShape(ShapeType.CIRCLE).getType());
+        System.out.println(ShapeCache.getShape(ShapeType.SQUARE).getType());
+        System.out.println(ShapeCache.getShape(ShapeType.RECTANGLE).getType());
     }
 }

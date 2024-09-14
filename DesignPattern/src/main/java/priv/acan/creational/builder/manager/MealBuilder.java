@@ -1,9 +1,9 @@
 package priv.acan.creational.builder.manager;
 
-import priv.acan.creational.builder.in.impl.item.burger.ChickenBurger;
-import priv.acan.creational.builder.in.impl.item.burger.VegBurger;
-import priv.acan.creational.builder.in.impl.item.drink.Coke;
-import priv.acan.creational.builder.in.impl.item.drink.Pepsi;
+import priv.acan.creational.builder.intf.impl.item.burger.ChickenBurger;
+import priv.acan.creational.builder.intf.impl.item.burger.VegBurger;
+import priv.acan.creational.builder.intf.impl.item.drink.Coke;
+import priv.acan.creational.builder.intf.impl.item.drink.Pepsi;
 
 /**
  * @author acan
