@@ -2,7 +2,6 @@ package priv.acan.structural.filter.intf;
 
 import priv.acan.structural.filter.model.Person;
 
-import java.util.List;
 import java.util.Set;
 
 /**

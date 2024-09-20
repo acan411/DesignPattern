@@ -6,8 +6,6 @@ import priv.acan.structural.filter.intf.Criteria;
 import priv.acan.structural.filter.intf.impl.*;
 import priv.acan.structural.filter.model.Person;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 /**

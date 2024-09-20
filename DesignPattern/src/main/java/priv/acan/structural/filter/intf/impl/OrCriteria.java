@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import priv.acan.structural.filter.intf.Criteria;
 import priv.acan.structural.filter.model.Person;
 
-import java.util.List;
 import java.util.Set;
 
 /**

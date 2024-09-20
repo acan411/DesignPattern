@@ -1,13 +1,13 @@
 package priv.acan.creational.abst.factory.abst.impl;
 
 import priv.acan.creational.abst.factory.abst.AbstractFactory;
+import priv.acan.creational.abst.factory.constant.ColorType;
+import priv.acan.creational.abst.factory.constant.ShapeType;
 import priv.acan.creational.abst.factory.intf.Color;
 import priv.acan.creational.abst.factory.intf.Shape;
 import priv.acan.creational.abst.factory.intf.impl.color.Blue;
 import priv.acan.creational.abst.factory.intf.impl.color.Green;
 import priv.acan.creational.abst.factory.intf.impl.color.Red;
-import priv.acan.creational.abst.factory.constant.ColorType;
-import priv.acan.creational.abst.factory.constant.ShapeType;
 
 /**
  * @author acan

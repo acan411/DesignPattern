@@ -1,8 +1,6 @@
 package priv.acan.behavioral.memento.context;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import priv.acan.behavioral.memento.model.Memento;
 
 /**

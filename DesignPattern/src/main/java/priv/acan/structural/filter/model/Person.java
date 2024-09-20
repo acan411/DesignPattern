@@ -1,6 +1,5 @@
 package priv.acan.structural.filter.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import priv.acan.structural.filter.constant.Gender;

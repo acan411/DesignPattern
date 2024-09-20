@@ -1,7 +1,7 @@
 package priv.acan.structural.adapter.intf.basic.impl;
 
-import priv.acan.structural.adapter.intf.basic.MediaPlayer;
 import priv.acan.structural.adapter.constant.AudioType;
+import priv.acan.structural.adapter.intf.basic.MediaPlayer;
 
 public class AudioPlayer implements MediaPlayer {
 

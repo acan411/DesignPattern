@@ -1,10 +1,10 @@
 package priv.acan.structural.adapter.intf.basic.impl;
 
+import priv.acan.structural.adapter.constant.AudioType;
 import priv.acan.structural.adapter.intf.advance.AdvancedMediaPlayer;
 import priv.acan.structural.adapter.intf.advance.impl.Mp4Player;
 import priv.acan.structural.adapter.intf.advance.impl.VlcPlayer;
 import priv.acan.structural.adapter.intf.basic.MediaPlayer;
-import priv.acan.structural.adapter.constant.AudioType;
 
 public class MediaAdapter implements MediaPlayer {
 

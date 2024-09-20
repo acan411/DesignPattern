@@ -1,7 +1,7 @@
 package priv.acan.structural.adapter;
 
-import priv.acan.structural.adapter.intf.basic.impl.AudioPlayer;
 import priv.acan.structural.adapter.constant.AudioType;
+import priv.acan.structural.adapter.intf.basic.impl.AudioPlayer;
 
 public class AdapterDemo {
 

@@ -1,7 +1,7 @@
 package priv.acan.creational.prototype;
 
-import priv.acan.creational.prototype.manager.ShapeCache;
 import priv.acan.creational.prototype.constant.ShapeType;
+import priv.acan.creational.prototype.manager.ShapeCache;
 
 public class PrototypeDemo {
 
