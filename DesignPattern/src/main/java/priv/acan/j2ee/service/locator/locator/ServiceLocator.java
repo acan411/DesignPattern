@@ -1,6 +1,7 @@
 package priv.acan.j2ee.service.locator.locator;
 
 import priv.acan.j2ee.service.locator.cache.Cache;
+import priv.acan.j2ee.service.locator.constant.Jndi;
 import priv.acan.j2ee.service.locator.context.InitialContext;
 import priv.acan.j2ee.service.locator.in.Service;
 
@@ -16,16 +17,16 @@ public class ServiceLocator {
         cache = new Cache();
     }
 
-    public static Service getService(String jndiName) {
+    public static Service getService(Jndi jndi) {
 
-        Service service = cache.getService(jndiName);
+        Service service = cache.getService(jndi);
 
         if (service != null) {
             return service;
         }
 
         InitialContext context = new InitialContext();
-        Service service1 = (Service) context.lookup(jndiName);
+        Service service1 = context.lookup(jndi);
         cache.addService(service1);
         return service1;
     }

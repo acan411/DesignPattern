@@ -1,6 +1,7 @@
 package priv.acan.j2ee.intercepting.filter.chain;
 
-import priv.acan.j2ee.intercepting.filter.in.Filter;
+import lombok.Setter;
+import priv.acan.j2ee.intercepting.filter.intf.Filter;
 import priv.acan.j2ee.intercepting.filter.target.Target;
 
 import java.util.ArrayList;
@@ -12,7 +13,9 @@ import java.util.List;
  */
 public class FilterChain {
 
-    private final List<Filter> filters = new ArrayList<Filter>();
+    private final List<Filter> filters = new ArrayList<>();
+
+    @Setter
     private Target target;
 
     public void addFilter(Filter filter) {
@@ -26,7 +29,4 @@ public class FilterChain {
         target.execute(request);
     }
 
-    public void setTarget(Target target) {
-        this.target = target;
-    }
 }

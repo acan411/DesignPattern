@@ -1,4 +1,4 @@
-package priv.acan.j2ee.composite.entity.pojo;
+package priv.acan.j2ee.composite.entity.model;
 
 import lombok.Data;
 

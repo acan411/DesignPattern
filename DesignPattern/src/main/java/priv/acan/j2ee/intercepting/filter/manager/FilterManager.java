@@ -1,7 +1,7 @@
 package priv.acan.j2ee.intercepting.filter.manager;
 
 import priv.acan.j2ee.intercepting.filter.chain.FilterChain;
-import priv.acan.j2ee.intercepting.filter.in.Filter;
+import priv.acan.j2ee.intercepting.filter.intf.Filter;
 import priv.acan.j2ee.intercepting.filter.target.Target;
 
 /**
@@ -10,14 +10,13 @@ import priv.acan.j2ee.intercepting.filter.target.Target;
  */
 public class FilterManager {
 
-    private final FilterChain filterChain;
+    private final FilterChain filterChain = new FilterChain();
 
     public FilterManager(Target target) {
-        filterChain = new FilterChain();
         filterChain.setTarget(target);
     }
 
-    public void setFilter(Filter filter) {
+    public void addFilter(Filter filter) {
         filterChain.addFilter(filter);
     }
 

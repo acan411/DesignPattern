@@ -1,5 +1,6 @@
 package priv.acan.j2ee.service.locator.cache;
 
+import priv.acan.j2ee.service.locator.constant.Jndi;
 import priv.acan.j2ee.service.locator.in.Service;
 
 import java.util.ArrayList;
@@ -17,10 +18,10 @@ public class Cache {
         services = new ArrayList<>();
     }
 
-    public Service getService(String serviceName) {
+    public Service getService(Jndi jndi) {
         for (Service service : services) {
-            if (service.getName().equalsIgnoreCase(serviceName)) {
-                System.out.println("Returning cached  " + serviceName + " object");
+            if (service.getName().equals(jndi)) {
+                System.out.println("Returning cached  " + jndi.name() + " object");
                 return service;
             }
         }
@@ -30,7 +31,7 @@ public class Cache {
     public void addService(Service newService) {
         boolean exists = false;
         for (Service service : services) {
-            if (service.getName().equalsIgnoreCase(newService.getName())) {
+            if (service.getName().equals(newService.getName())) {
                 exists = true;
             }
         }

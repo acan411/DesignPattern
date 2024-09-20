@@ -6,7 +6,7 @@ package priv.acan.j2ee.composite.entity;
 
 // 组合实体模式
 // 组合实体模式（Composite Entity Pattern）用在 EJB 持久化机制中。
-// 一个组合实体是一个 EJB 实体 bean，代表了对象的图解。
+// 一个组合实体是一个 EJB (Enterprise Java Beans) 实体 bean，代表了对象的图解。
 // 当更新一个组合实体时，内部依赖对象 beans 会自动更新，因为它们是由 EJB 实体 bean 管理的。
 // 以下是组合实体 bean 的参与者。
 //

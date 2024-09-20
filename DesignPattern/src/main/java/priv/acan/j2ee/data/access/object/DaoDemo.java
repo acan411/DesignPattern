@@ -1,8 +1,8 @@
 package priv.acan.j2ee.data.access.object;
 
-import priv.acan.j2ee.data.access.object.in.StudentDao;
-import priv.acan.j2ee.data.access.object.in.impl.StudentDaoImpl;
-import priv.acan.j2ee.data.access.object.pojo.Student;
+import priv.acan.j2ee.data.access.object.intf.StudentDao;
+import priv.acan.j2ee.data.access.object.intf.impl.StudentDaoImpl;
+import priv.acan.j2ee.data.access.object.model.Student;
 
 /**
  * @author acan
@@ -12,18 +12,21 @@ public class DaoDemo {
     public static void main(String[] args) {
         StudentDao studentDao = new StudentDaoImpl();
 
-        //输出所有的学生
+        // 输出所有的学生
         for (Student student : studentDao.getAllStudents()) {
             System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + " ]");
         }
 
-        //更新学生
+        // 更新学生
         Student student = studentDao.getAllStudents().get(0);
         student.setName("Michael");
         studentDao.updateStudent(student);
 
-        //获取学生
-        studentDao.getStudent(0);
+        // 获取学生
+        student = studentDao.getStudent(0);
         System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + " ]");
+
+        // 删除学生
+        studentDao.deleteStudent(student);
     }
 }

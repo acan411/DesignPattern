@@ -1,5 +1,6 @@
 package priv.acan.j2ee.service.locator.in.impl;
 
+import priv.acan.j2ee.service.locator.constant.Jndi;
 import priv.acan.j2ee.service.locator.in.Service;
 
 /**
@@ -8,8 +9,8 @@ import priv.acan.j2ee.service.locator.in.Service;
  */
 public class Service2 implements Service {
     @Override
-    public String getName() {
-        return "Service2";
+    public Jndi getName() {
+        return Jndi.SERVICE2;
     }
 
     @Override

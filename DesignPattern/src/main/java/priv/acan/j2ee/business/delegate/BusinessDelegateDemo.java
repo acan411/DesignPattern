@@ -2,6 +2,7 @@ package priv.acan.j2ee.business.delegate;
 
 import priv.acan.j2ee.business.delegate.business.BusinessDelegate;
 import priv.acan.j2ee.business.delegate.client.Client;
+import priv.acan.j2ee.business.delegate.constant.ServiceType;
 
 /**
  * @author acan
@@ -11,12 +12,12 @@ public class BusinessDelegateDemo {
 
     public static void main(String[] args) {
         BusinessDelegate businessDelegate = new BusinessDelegate();
-        businessDelegate.setServiceType("EJB");
-
         Client client = new Client(businessDelegate);
+
+        businessDelegate.setServiceType(ServiceType.EJB);
         client.doTask();
 
-        businessDelegate.setServiceType("JMS");
+        businessDelegate.setServiceType(ServiceType.JMS);
         client.doTask();
     }
 }

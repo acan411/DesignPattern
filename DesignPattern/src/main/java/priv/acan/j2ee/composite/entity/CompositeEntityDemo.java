@@ -10,9 +10,9 @@ public class CompositeEntityDemo {
 
     public static void main(String[] args) {
         Client client = new Client();
-        client.setData("Test", "Data");
-        client.printData();
-        client.setData("Second Test", "Data1");
-        client.printData();
+        client.setData("Test1", "Data1");
+        client.getData();
+        client.setData("Test2", "Data2");
+        client.getData();
     }
 }

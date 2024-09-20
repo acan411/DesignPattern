@@ -1,5 +1,6 @@
 package priv.acan.j2ee.front.controller.dispatcher;
 
+import priv.acan.j2ee.front.controller.constant.Request;
 import priv.acan.j2ee.front.controller.view.HomeView;
 import priv.acan.j2ee.front.controller.view.StudentView;
 
@@ -9,20 +10,13 @@ import priv.acan.j2ee.front.controller.view.StudentView;
  */
 public class Dispatcher {
 
-    private final StudentView studentView;
-    private final HomeView homeView;
+    private final StudentView studentView = new StudentView();
+    private final HomeView homeView = new HomeView();
 
-    public Dispatcher() {
-        studentView = new StudentView();
-        homeView = new HomeView();
-    }
-
-    public void dispatch(String request) {
-        switch (request.toUpperCase()) {
-            case "STUDENT" -> studentView.show();
-            case "HOME" -> homeView.show();
-            default -> {
-            }
+    public void dispatch(Request request) {
+        switch (request) {
+            case STUDENT -> studentView.show();
+            case HOME -> homeView.show();
         }
     }
 }

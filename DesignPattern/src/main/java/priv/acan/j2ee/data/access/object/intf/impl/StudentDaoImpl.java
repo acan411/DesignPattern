@@ -1,7 +1,7 @@
-package priv.acan.j2ee.data.access.object.in.impl;
+package priv.acan.j2ee.data.access.object.intf.impl;
 
-import priv.acan.j2ee.data.access.object.in.StudentDao;
-import priv.acan.j2ee.data.access.object.pojo.Student;
+import priv.acan.j2ee.data.access.object.intf.StudentDao;
+import priv.acan.j2ee.data.access.object.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,14 +12,11 @@ import java.util.List;
  */
 public class StudentDaoImpl implements StudentDao {
 
-    private final List<Student> students;
+    private final List<Student> students = new ArrayList<>();
 
     public StudentDaoImpl() {
-        students = new ArrayList<>();
-        Student student1 = new Student("Robert", 0);
-        Student student2 = new Student("John", 1);
-        students.add(student1);
-        students.add(student2);
+        students.add(new Student("Robert", 0));
+        students.add(new Student("John", 1));
     }
 
 

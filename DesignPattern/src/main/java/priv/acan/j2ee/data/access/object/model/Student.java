@@ -1,4 +1,4 @@
-package priv.acan.j2ee.data.access.object.pojo;
+package priv.acan.j2ee.data.access.object.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

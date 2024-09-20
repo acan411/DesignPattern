@@ -1,6 +1,8 @@
 package priv.acan.j2ee.business.delegate.business;
 
-import priv.acan.j2ee.business.delegate.in.BusinessService;
+import lombok.Setter;
+import priv.acan.j2ee.business.delegate.constant.ServiceType;
+import priv.acan.j2ee.business.delegate.intf.BusinessService;
 import priv.acan.j2ee.business.delegate.lookup.BusinessLookUp;
 
 /**
@@ -9,17 +11,13 @@ import priv.acan.j2ee.business.delegate.lookup.BusinessLookUp;
  */
 public class BusinessDelegate {
 
-    private final BusinessLookUp lookupService = new BusinessLookUp();
-    private String serviceType;
+    private final BusinessLookUp businessLookUp = new BusinessLookUp();
 
-    public void setServiceType(String serviceType) {
-        this.serviceType = serviceType;
-    }
+    @Setter
+    private ServiceType serviceType;
 
     public void doTask() {
-        BusinessService businessService = lookupService.getBusinessService(serviceType);
-        if (businessService != null) {
-            businessService.doProcessing();
-        }
+        BusinessService businessService = businessLookUp.getBusinessService(serviceType);
+        businessService.doProcessing();
     }
 }

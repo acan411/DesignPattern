@@ -1,6 +1,6 @@
-package priv.acan.j2ee.business.delegate.in.impl;
+package priv.acan.j2ee.business.delegate.intf.impl;
 
-import priv.acan.j2ee.business.delegate.in.BusinessService;
+import priv.acan.j2ee.business.delegate.intf.BusinessService;
 
 /**
  * @author acan

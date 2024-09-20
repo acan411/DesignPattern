@@ -1,5 +1,6 @@
 package priv.acan.j2ee.front.controller;
 
+import priv.acan.j2ee.front.controller.constant.Request;
 import priv.acan.j2ee.front.controller.controller.FrontController;
 
 /**
@@ -9,7 +10,7 @@ import priv.acan.j2ee.front.controller.controller.FrontController;
 public class FrontControllerDemo {
     public static void main(String[] args) {
         FrontController frontController = new FrontController();
-        frontController.dispatchRequest("HOME");
-        frontController.dispatchRequest("STUDENT");
+        frontController.dispatchRequest(Request.HOME);
+        frontController.dispatchRequest(Request.STUDENT);
     }
 }

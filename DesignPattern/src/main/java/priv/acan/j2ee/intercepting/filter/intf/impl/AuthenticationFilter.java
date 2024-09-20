@@ -1,6 +1,6 @@
-package priv.acan.j2ee.intercepting.filter.in.impl;
+package priv.acan.j2ee.intercepting.filter.intf.impl;
 
-import priv.acan.j2ee.intercepting.filter.in.Filter;
+import priv.acan.j2ee.intercepting.filter.intf.Filter;
 
 /**
  * @author acan

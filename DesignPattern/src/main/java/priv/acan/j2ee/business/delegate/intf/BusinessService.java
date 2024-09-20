@@ -1,4 +1,4 @@
-package priv.acan.j2ee.business.delegate.in;
+package priv.acan.j2ee.business.delegate.intf;
 
 /**
  * @author acan

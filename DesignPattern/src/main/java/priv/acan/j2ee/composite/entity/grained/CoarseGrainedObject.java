@@ -1,7 +1,7 @@
 package priv.acan.j2ee.composite.entity.grained;
 
-import priv.acan.j2ee.composite.entity.pojo.DependentObject1;
-import priv.acan.j2ee.composite.entity.pojo.DependentObject2;
+import priv.acan.j2ee.composite.entity.model.DependentObject1;
+import priv.acan.j2ee.composite.entity.model.DependentObject2;
 
 /**
  * @author acan
@@ -9,8 +9,8 @@ import priv.acan.j2ee.composite.entity.pojo.DependentObject2;
  */
 public class CoarseGrainedObject {
 
-    DependentObject1 do1 = new DependentObject1();
-    DependentObject2 do2 = new DependentObject2();
+    private final DependentObject1 do1 = new DependentObject1();
+    private final DependentObject2 do2 = new DependentObject2();
 
     public void setData(String data1, String data2) {
         do1.setData(data1);

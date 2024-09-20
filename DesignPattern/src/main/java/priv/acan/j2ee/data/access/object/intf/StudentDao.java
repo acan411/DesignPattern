@@ -1,6 +1,6 @@
-package priv.acan.j2ee.data.access.object.in;
+package priv.acan.j2ee.data.access.object.intf;
 
-import priv.acan.j2ee.data.access.object.pojo.Student;
+import priv.acan.j2ee.data.access.object.model.Student;
 
 import java.util.List;
 

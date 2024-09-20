@@ -1,4 +1,4 @@
-package priv.acan.j2ee.intercepting.filter.in;
+package priv.acan.j2ee.intercepting.filter.intf;
 
 /**
  * @author acan

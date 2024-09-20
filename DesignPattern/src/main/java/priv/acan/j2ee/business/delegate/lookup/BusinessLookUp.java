@@ -1,8 +1,9 @@
 package priv.acan.j2ee.business.delegate.lookup;
 
-import priv.acan.j2ee.business.delegate.in.BusinessService;
-import priv.acan.j2ee.business.delegate.in.impl.EJBService;
-import priv.acan.j2ee.business.delegate.in.impl.JMSService;
+import priv.acan.j2ee.business.delegate.constant.ServiceType;
+import priv.acan.j2ee.business.delegate.intf.BusinessService;
+import priv.acan.j2ee.business.delegate.intf.impl.EJBService;
+import priv.acan.j2ee.business.delegate.intf.impl.JMSService;
 
 /**
  * @author acan
@@ -10,11 +11,10 @@ import priv.acan.j2ee.business.delegate.in.impl.JMSService;
  */
 public class BusinessLookUp {
 
-    public BusinessService getBusinessService(String serviceType) {
-        return switch (serviceType.toUpperCase()) {
-            case "EJB" -> new EJBService();
-            case "JMS" -> new JMSService();
-            default -> null;
+    public BusinessService getBusinessService(ServiceType serviceType) {
+        return switch (serviceType) {
+            case EJB -> new EJBService();
+            case JMS -> new JMSService();
         };
     }
 }
