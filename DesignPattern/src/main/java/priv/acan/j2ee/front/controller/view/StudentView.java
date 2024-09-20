@@ -6,6 +6,6 @@ package priv.acan.j2ee.front.controller.view;
  */
 public class StudentView {
     public void show() {
-        System.out.println("Displaying Student Page");
+        System.out.println("Displaying StudentVO Page");
     }
 }

@@ -3,8 +3,8 @@ package priv.acan.j2ee.service.locator.cache;
 import priv.acan.j2ee.service.locator.constant.Jndi;
 import priv.acan.j2ee.service.locator.in.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author acan
@@ -12,31 +12,18 @@ import java.util.List;
  */
 public class Cache {
 
-    private final List<Service> services;
-
-    public Cache() {
-        services = new ArrayList<>();
-    }
+    private final Map<Jndi, Service> map = new HashMap<>();
 
     public Service getService(Jndi jndi) {
-        for (Service service : services) {
-            if (service.getName().equals(jndi)) {
-                System.out.println("Returning cached  " + jndi.name() + " object");
-                return service;
-            }
+        Service service = map.get(jndi);
+        // 记录日志
+        if (service != null) {
+            System.out.println("Returning cached  " + jndi.name() + " object");
         }
-        return null;
+        return service;
     }
 
-    public void addService(Service newService) {
-        boolean exists = false;
-        for (Service service : services) {
-            if (service.getName().equals(newService.getName())) {
-                exists = true;
-            }
-        }
-        if (!exists) {
-            services.add(newService);
-        }
+    public void addService(Service service) {
+        map.putIfAbsent(service.getName(), service);
     }
 }

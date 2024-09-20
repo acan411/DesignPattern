@@ -10,19 +10,20 @@ import priv.acan.j2ee.service.locator.in.impl.Service2;
  * @since 2023/03/09 21:18
  */
 public class InitialContext {
-    public Service lookup(Jndi jndi) {
-        switch (jndi) {
+
+    private InitialContext() {
+    }
+
+    public static Service lookup(Jndi jndi) {
+        return switch (jndi) {
             case SERVICE1 -> {
                 System.out.println("Looking up and creating a new Service1 object");
-                return new Service1();
+                yield new Service1();
             }
             case SERVICE2 -> {
                 System.out.println("Looking up and creating a new Service2 object");
-                return new Service2();
+                yield new Service2();
             }
-            default -> {
-                return null;
-            }
-        }
+        };
     }
 }

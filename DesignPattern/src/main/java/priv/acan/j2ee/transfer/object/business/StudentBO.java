@@ -1,6 +1,6 @@
 package priv.acan.j2ee.transfer.object.business;
 
-import priv.acan.j2ee.transfer.object.pojo.StudentVO;
+import priv.acan.j2ee.transfer.object.model.StudentVO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,10 +11,9 @@ import java.util.List;
  */
 public class StudentBO {
 
-    private final List<StudentVO> students;
+    private final List<StudentVO> students = new ArrayList<>();
 
     public StudentBO() {
-        students = new ArrayList<>();
         StudentVO robert = new StudentVO("Robert", 0);
         StudentVO john = new StudentVO("John", 1);
         students.add(robert);
@@ -23,7 +22,7 @@ public class StudentBO {
 
     public void deleteStudent(StudentVO student) {
         students.remove(student.getRollNo());
-        System.out.println("Student: Roll No " + student.getRollNo() + ", deleted from database");
+        System.out.println("StudentVO: Roll No " + student.getRollNo() + ", deleted from database");
     }
 
     public List<StudentVO> getAllStudents() {
@@ -36,6 +35,6 @@ public class StudentBO {
 
     public void updateStudent(StudentVO student) {
         students.get(student.getRollNo()).setName(student.getName());
-        System.out.println("Student: Roll No " + student.getRollNo() + ", updated in the database");
+        System.out.println("StudentVO: Roll No " + student.getRollNo() + ", updated in the database");
     }
 }

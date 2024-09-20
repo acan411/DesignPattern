@@ -14,19 +14,14 @@ public class ServiceLocator {
     private ServiceLocator() {
     }
 
-    private static final Cache cache= new Cache();
+    private static final Cache CACHE = new Cache();
 
     public static Service getService(Jndi jndi) {
-
-        Service service = cache.getService(jndi);
-
-        if (service != null) {
-            return service;
+        Service service = CACHE.getService(jndi);
+        if (service == null) {
+            service = InitialContext.lookup(jndi);
+            CACHE.addService(service);
         }
-
-        InitialContext context = new InitialContext();
-        Service service1 = context.lookup(jndi);
-        cache.addService(service1);
-        return service1;
+        return service;
     }
 }

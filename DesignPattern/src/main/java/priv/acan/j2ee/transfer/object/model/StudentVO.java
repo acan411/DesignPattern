@@ -1,4 +1,4 @@
-package priv.acan.j2ee.transfer.object.pojo;
+package priv.acan.j2ee.transfer.object.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
