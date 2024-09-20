@@ -1,9 +1,9 @@
 package priv.acan.structural.decorator;
 
-import priv.acan.structural.decorator.ab.ShapeDecorator;
-import priv.acan.structural.decorator.ab.impl.RedShapeDecorator;
-import priv.acan.structural.decorator.in.impl.Circle;
-import priv.acan.structural.decorator.in.impl.Rectangle;
+import priv.acan.structural.decorator.abst.ShapeDecorator;
+import priv.acan.structural.decorator.abst.impl.RedShapeDecorator;
+import priv.acan.structural.decorator.intf.impl.Circle;
+import priv.acan.structural.decorator.intf.impl.Rectangle;
 
 /**
  * @author acan
@@ -21,10 +21,14 @@ public class DecoratorDemo {
         System.out.println("Circle with normal border");
         circle.draw();
 
-        System.out.println("\nCircle of red border");
+        System.out.println();
+
+        System.out.println("Circle of red border");
         redBorderCircle.draw();
 
-        System.out.println("\nRectangle of red border");
+        System.out.println();
+
+        System.out.println("Rectangle of red border");
         redBorderRectangle.draw();
     }
 }

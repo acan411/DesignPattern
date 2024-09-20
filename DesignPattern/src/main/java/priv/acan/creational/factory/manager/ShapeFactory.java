@@ -1,5 +1,6 @@
 package priv.acan.creational.factory.manager;
 
+import priv.acan.creational.factory.constant.ShapeType;
 import priv.acan.creational.factory.intf.Shape;
 import priv.acan.creational.factory.intf.impl.Circle;
 import priv.acan.creational.factory.intf.impl.Rectangle;

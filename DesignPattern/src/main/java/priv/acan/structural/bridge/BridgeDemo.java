@@ -1,9 +1,10 @@
 package priv.acan.structural.bridge;
 
-import priv.acan.structural.bridge.ab.Shape;
-import priv.acan.structural.bridge.ab.impl.Circle;
-import priv.acan.structural.bridge.in.impl.GreenCircle;
-import priv.acan.structural.bridge.in.impl.RedCircle;
+import priv.acan.structural.bridge.abst.DrawShape;
+import priv.acan.structural.bridge.abst.impl.DrawBridge;
+import priv.acan.structural.bridge.intf.impl.DrawGreen;
+import priv.acan.structural.bridge.intf.impl.DrawRed;
+import priv.acan.structural.bridge.model.Circle;
 
 /**
  * @author acan
@@ -13,8 +14,8 @@ public class BridgeDemo {
 
     public static void main(String[] args) {
 
-        Shape redCircle = new Circle(new RedCircle(), 100, 0, 0);
-        Shape greenCircle = new Circle(new GreenCircle(), 50, 1, 1);
+        DrawShape redCircle = new DrawBridge(new DrawRed(), new Circle(6, 6, 6));
+        DrawShape greenCircle = new DrawBridge(new DrawGreen(), new Circle(5, 5, 5));
 
         redCircle.draw();
         greenCircle.draw();

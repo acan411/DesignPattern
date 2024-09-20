@@ -14,6 +14,6 @@ public class InfoLogger extends AbstractLogger {
 
     @Override
     protected void write(String message) {
-        System.out.println("InfoLogger::write() " + message);
+        System.out.println("InfoLogger::write " + message);
     }
 }

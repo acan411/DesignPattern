@@ -1,7 +1,7 @@
 package priv.acan.structural.proxy;
 
-import priv.acan.structural.proxy.in.Image;
-import priv.acan.structural.proxy.in.impl.ProxyImage;
+import priv.acan.structural.proxy.intf.Image;
+import priv.acan.structural.proxy.intf.impl.ProxyImage;
 
 /**
  * @author acan
@@ -10,10 +10,15 @@ import priv.acan.structural.proxy.in.impl.ProxyImage;
 public class ProxyDemo {
 
     public static void main(String[] args) {
-        Image image = new ProxyImage("test.jpg");
+        Image image = ProxyImage.builder()
+                .fileName("test.jpg")
+                .build();
 
         // 图像从磁盘加载
         image.display();
+
+        System.out.println();
+
         // 图像不需要从磁盘加载
         image.display();
     }

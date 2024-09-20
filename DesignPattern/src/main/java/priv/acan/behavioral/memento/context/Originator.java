@@ -1,5 +1,6 @@
 package priv.acan.behavioral.memento.context;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import priv.acan.behavioral.memento.model.Memento;
@@ -8,8 +9,7 @@ import priv.acan.behavioral.memento.model.Memento;
  * @author acan
  * @since 2022/12/26 04:03
  */
-@Getter
-@Setter
+@Data
 public class Originator {
 
     private String state;
@@ -19,6 +19,6 @@ public class Originator {
     }
 
     public void getStateFromMemento(Memento memento) {
-        state = memento.getState();
+        state = memento.state();
     }
 }

@@ -1,9 +1,9 @@
 package priv.acan.structural.facade.manager;
 
-import priv.acan.structural.facade.in.Shape;
-import priv.acan.structural.facade.in.impl.Circle;
-import priv.acan.structural.facade.in.impl.Rectangle;
-import priv.acan.structural.facade.in.impl.Square;
+import priv.acan.structural.facade.intf.Shape;
+import priv.acan.structural.facade.intf.impl.Circle;
+import priv.acan.structural.facade.intf.impl.Rectangle;
+import priv.acan.structural.facade.intf.impl.Square;
 
 /**
  * @author acan

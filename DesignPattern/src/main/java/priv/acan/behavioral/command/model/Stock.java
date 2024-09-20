@@ -1,19 +1,22 @@
 package priv.acan.behavioral.command.model;
 
+import lombok.EqualsAndHashCode;
+
 /**
  * @author acan
  * @since 2022/12/21 23:05
  */
+@EqualsAndHashCode
 public class Stock {
 
-    private final String name = "ABC";
-    private final int quantity = 10;
+    private static final String NAME = "ABC";
+    private static final int QUANTITY = 10;
 
     public void buy() {
-        System.out.println("Stock [ Name: " + name + ", Quantity: " + quantity + " ] bought");
+        System.out.println("Stock [ Name: " + NAME + ", Quantity: " + QUANTITY + " ] bought");
     }
 
     public void sell() {
-        System.out.println("Stock [ Name: " + name + ", Quantity: " + quantity + " ] sold");
+        System.out.println("Stock [ Name: " + NAME + ", Quantity: " + QUANTITY + " ] sold");
     }
 }

@@ -1,7 +1,7 @@
 package priv.acan.creational.prototype.abst.impl;
 
 import priv.acan.creational.prototype.abst.Shape;
-import priv.acan.creational.prototype.manager.ShapeType;
+import priv.acan.creational.prototype.constant.ShapeType;
 
 public class Circle extends Shape {
 

@@ -1,5 +1,9 @@
 package priv.acan.structural.composite.model;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,18 +11,15 @@ import java.util.List;
  * @author acan
  * @since 2022/12/17 15:08
  */
+@Builder
 public class Employee {
 
     private final String name;
     private final String dept;
     private final int salary;
-    private final List<Employee> subordinates = new ArrayList<>();
 
-    public Employee(String name, String dept, int salary) {
-        this.name = name;
-        this.dept = dept;
-        this.salary = salary;
-    }
+    @Getter
+    private final List<Employee> subordinates = new ArrayList<>();
 
     public void add(Employee e) {
         subordinates.add(e);
@@ -26,10 +27,6 @@ public class Employee {
 
     public void remove(Employee e) {
         subordinates.remove(e);
-    }
-
-    public List<Employee> getSubordinates() {
-        return subordinates;
     }
 
     @Override

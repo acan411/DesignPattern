@@ -12,10 +12,10 @@ import java.util.Set;
  */
 public class CustomerFactory {
 
-    public static final Set<String> set = Set.of("Rob", "Joe", "Julie");
+    public static final Set<String> SET = Set.of("Rob", "Joe", "Julie");
 
     public static AbstractCustomer getCustomer(String name) {
-        if (set.contains(name)) {
+        if (SET.contains(name)) {
             return new RealCustomer(name);
         }
         return new NullCustomer();

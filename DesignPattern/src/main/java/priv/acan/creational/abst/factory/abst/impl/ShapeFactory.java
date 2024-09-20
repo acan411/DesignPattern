@@ -6,8 +6,8 @@ import priv.acan.creational.abst.factory.intf.Shape;
 import priv.acan.creational.abst.factory.intf.impl.shape.Circle;
 import priv.acan.creational.abst.factory.intf.impl.shape.Rectangle;
 import priv.acan.creational.abst.factory.intf.impl.shape.Square;
-import priv.acan.creational.abst.factory.manager.ColorType;
-import priv.acan.creational.abst.factory.manager.ShapeType;
+import priv.acan.creational.abst.factory.constant.ColorType;
+import priv.acan.creational.abst.factory.constant.ShapeType;
 
 
 /**

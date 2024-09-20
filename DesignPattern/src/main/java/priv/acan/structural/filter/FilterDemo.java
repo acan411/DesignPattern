@@ -1,11 +1,14 @@
 package priv.acan.structural.filter;
 
-import priv.acan.structural.filter.in.Criteria;
-import priv.acan.structural.filter.in.impl.*;
+import priv.acan.structural.filter.constant.Gender;
+import priv.acan.structural.filter.constant.MaritalStatus;
+import priv.acan.structural.filter.intf.Criteria;
+import priv.acan.structural.filter.intf.impl.*;
 import priv.acan.structural.filter.model.Person;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author acan
@@ -14,14 +17,16 @@ import java.util.List;
 public class FilterDemo {
 
     public static void main(String[] args) {
-        List<Person> persons = new ArrayList<>();
 
-        persons.add(new Person("Robert", "Male", "Single"));
-        persons.add(new Person("John", "Male", "Married"));
-        persons.add(new Person("Laura", "Female", "Married"));
-        persons.add(new Person("Diana", "Female", "Single"));
-        persons.add(new Person("Mike", "Male", "Single"));
-        persons.add(new Person("Bobby", "Male", "Single"));
+        Set<Person> people = Set.of(
+                Person.builder().name("Robert").gender(Gender.MALE).maritalStatus(MaritalStatus.SINGLE).build(),
+                Person.builder().name("John").gender(Gender.MALE).maritalStatus(MaritalStatus.MARRIED).build(),
+                Person.builder().name("Laura").gender(Gender.FEMALE).maritalStatus(MaritalStatus.MARRIED).build(),
+                Person.builder().name("Diana").gender(Gender.FEMALE).maritalStatus(MaritalStatus.SINGLE).build(),
+                Person.builder().name("Mike").gender(Gender.MALE).maritalStatus(MaritalStatus.SINGLE).build(),
+                Person.builder().name("Bobby").gender(Gender.MALE).maritalStatus(MaritalStatus.SINGLE).build()
+        );
+
 
         Criteria male = new CriteriaMale();
         Criteria female = new CriteriaFemale();
@@ -31,22 +36,26 @@ public class FilterDemo {
         Criteria singleOrFemale = new OrCriteria(single, female);
 
         System.out.println("Males: ");
-        printPersons(male.meetCriteria(persons));
+        printPersons(male.meetCriteria(people));
+        System.out.println();
 
-        System.out.println("\nFemales: ");
-        printPersons(female.meetCriteria(persons));
+        System.out.println("Females: ");
+        printPersons(female.meetCriteria(people));
+        System.out.println();
 
-        System.out.println("\nSingles: ");
-        printPersons(single.meetCriteria(persons));
+        System.out.println("Singles: ");
+        printPersons(single.meetCriteria(people));
+        System.out.println();
 
-        System.out.println("\nSingle Males: ");
-        printPersons(singleMale.meetCriteria(persons));
+        System.out.println("Single Males: ");
+        printPersons(singleMale.meetCriteria(people));
+        System.out.println();
 
-        System.out.println("\nSingle Or Females: ");
-        printPersons(singleOrFemale.meetCriteria(persons));
+        System.out.println("Single Or Females: ");
+        printPersons(singleOrFemale.meetCriteria(people));
     }
 
-    private static void printPersons(List<Person> persons) {
+    private static void printPersons(Set<Person> persons) {
         for (Person person : persons) {
             System.out.println("Person : [ Name : " + person.getName()
                     + ", Gender : " + person.getGender()

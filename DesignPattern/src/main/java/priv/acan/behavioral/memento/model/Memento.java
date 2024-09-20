@@ -1,6 +1,5 @@
 package priv.acan.behavioral.memento.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
@@ -8,8 +7,6 @@ import lombok.Getter;
  * @since 2022/12/26 04:02
  */
 @Getter
-@AllArgsConstructor
-public class Memento {
+public record Memento(String state) {
 
-    private String state;
 }

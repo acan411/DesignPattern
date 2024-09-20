@@ -3,6 +3,7 @@ package priv.acan.creational.abst.factory.manager;
 import priv.acan.creational.abst.factory.abst.AbstractFactory;
 import priv.acan.creational.abst.factory.abst.impl.ColorFactory;
 import priv.acan.creational.abst.factory.abst.impl.ShapeFactory;
+import priv.acan.creational.abst.factory.constant.FactoryType;
 
 /**
  * @author acan

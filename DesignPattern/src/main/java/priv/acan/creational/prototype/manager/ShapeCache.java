@@ -4,6 +4,7 @@ import priv.acan.creational.prototype.abst.Shape;
 import priv.acan.creational.prototype.abst.impl.Circle;
 import priv.acan.creational.prototype.abst.impl.Rectangle;
 import priv.acan.creational.prototype.abst.impl.Square;
+import priv.acan.creational.prototype.constant.ShapeType;
 
 import java.util.HashMap;
 import java.util.Map;

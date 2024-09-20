@@ -2,7 +2,7 @@ package priv.acan.behavioral.command;
 
 import priv.acan.behavioral.command.intf.impl.BuyStock;
 import priv.acan.behavioral.command.intf.impl.SellStock;
-import priv.acan.behavioral.command.manager.Brocker;
+import priv.acan.behavioral.command.manager.Brock;
 import priv.acan.behavioral.command.model.Stock;
 
 /**
@@ -17,10 +17,10 @@ public class CommandDemo {
         BuyStock buyStock = new BuyStock(stock);
         SellStock sellStock = new SellStock(stock);
 
-        Brocker brocker = new Brocker();
-        brocker.takeOrder(buyStock);
-        brocker.takeOrder(sellStock);
+        Brock brock = new Brock();
+        brock.takeOrder(buyStock);
+        brock.takeOrder(sellStock);
 
-        brocker.placeOrders();
+        brock.placeOrders();
     }
 }

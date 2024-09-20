@@ -2,7 +2,7 @@ package priv.acan.creational.factory;
 
 import priv.acan.creational.factory.intf.Shape;
 import priv.acan.creational.factory.manager.ShapeFactory;
-import priv.acan.creational.factory.manager.ShapeType;
+import priv.acan.creational.factory.constant.ShapeType;
 
 /**
  * @author acan

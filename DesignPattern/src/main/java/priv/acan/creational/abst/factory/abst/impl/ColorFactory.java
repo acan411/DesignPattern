@@ -6,8 +6,8 @@ import priv.acan.creational.abst.factory.intf.Shape;
 import priv.acan.creational.abst.factory.intf.impl.color.Blue;
 import priv.acan.creational.abst.factory.intf.impl.color.Green;
 import priv.acan.creational.abst.factory.intf.impl.color.Red;
-import priv.acan.creational.abst.factory.manager.ColorType;
-import priv.acan.creational.abst.factory.manager.ShapeType;
+import priv.acan.creational.abst.factory.constant.ColorType;
+import priv.acan.creational.abst.factory.constant.ShapeType;
 
 /**
  * @author acan

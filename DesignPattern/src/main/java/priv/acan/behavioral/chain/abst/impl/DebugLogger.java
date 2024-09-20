@@ -14,6 +14,6 @@ public class DebugLogger extends AbstractLogger {
 
     @Override
     protected void write(String message) {
-        System.out.println("DebugLogger::write() " + message);
+        System.out.println("DebugLogger::write " + message);
     }
 }

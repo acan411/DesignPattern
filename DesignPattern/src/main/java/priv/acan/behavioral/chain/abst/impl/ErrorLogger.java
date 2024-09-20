@@ -14,6 +14,6 @@ public class ErrorLogger extends AbstractLogger {
 
     @Override
     protected void write(String message) {
-        System.out.println("ErrorLogger::write() " + message);
+        System.out.println("ErrorLogger::write " + message);
     }
 }
