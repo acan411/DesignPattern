@@ -1,7 +1,6 @@
 package priv.acan.structural.flyweight.factory;
 
 import priv.acan.structural.flyweight.constant.Color;
-import priv.acan.structural.flyweight.intf.Shape;
 import priv.acan.structural.flyweight.intf.impl.Circle;
 
 import java.util.HashMap;
@@ -19,8 +18,10 @@ public class CircleFactory {
     private static final Map<Color, Circle> CIRCLE_MAP = new HashMap<>();
 
     public static Circle getCircle(Color color) {
-        Circle circle = CIRCLE_MAP.getOrDefault(color, Circle.builder().color(color).build());
-        CIRCLE_MAP.putIfAbsent(color, circle);
-        return circle;
+        if (!CIRCLE_MAP.containsKey(color)) {
+            CIRCLE_MAP.put(color, Circle.builder().color(color).build());
+            System.out.println("Creating circle of color : " + color);
+        }
+        return CIRCLE_MAP.get(color);
     }
 }

@@ -11,11 +11,10 @@ import priv.acan.j2ee.service.locator.in.Service;
  */
 public class ServiceLocator {
 
-    private static final Cache cache;
-
-    static {
-        cache = new Cache();
+    private ServiceLocator() {
     }
+
+    private static final Cache cache= new Cache();
 
     public static Service getService(Jndi jndi) {
 
